@@ -540,6 +540,7 @@ ul.primary-menu li:hover ul{
     color: #666;
     font-size: 40px;
     margin-bottom: 10px;
+    box-shadow: 1px 1px 15px #ddd;
 }
 .services-tab .bbb strong{
     color: #111;
@@ -598,8 +599,6 @@ ul.primary-menu li:hover ul{
     margin-right: 20px;
 }
 
-
-
 .services-tab-right-top{}
 .services-tab-right-top h3{
     font-size: 24px;
@@ -615,6 +614,111 @@ ul.primary-menu li:hover ul{
     margin-bottom: 15px;
 }
 .services-tab-right-bottom p{
+    color: #606060;
+}
+
+/* client-section */
+.client-section{}
+.client-left{}
+.client-left p{
+    font-size: 24px;
+    color: #101;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.5;
+    
+}
+.client-left h3{
+    font-size: 20px;
+    color: #e73c3e;
+    margin-top: 15px;
+}
+.client-left span{
+    color: #606060;
+}
+.client-right{position: relative;} 
+.client-right span{
+    
+}
+.client-right span i {
+    position: absolute;
+    left: 80px;
+    bottom: 60px;
+    font-size: 37px;
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    color: #e73c3e;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 80px;
+    box-shadow: 1px 1px 20px #ddd;
+    transition: .5s;
+}
+.client-right span i:hover{
+    background: #e73c3e;
+    color: #fff;
+}
+
+/* team-member-section */
+.team-member-content{}
+.member-image{
+    position: relative;   
+}
+.member-image img{
+    width: 100%;
+    height: auto;
+}
+.team-social{
+    text-align: center;
+    padding-left: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 22px;
+}
+.team-social li{
+    display: inline-block;
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    transition:  .3s ease-in-out;
+}
+.member-image:hover .team-social li{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0)
+}
+.member-image .team-social li:nth-child(1){transition-delay: .2s;}
+.member-image .team-social li:nth-child(2){transition-delay: .3s;}
+.member-image .team-social li:nth-child(3){transition-delay: .4s;}
+.member-image .team-social li:nth-child(4){transition-delay: .5s;}
+
+.team-social li a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    color: #111;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 20px;
+    transition: .4s;
+}
+.team-social li a:hover{
+    background: #e73c3e;
+    color: #fff;
+}
+.team-social li a i{}
+.member-bottom{}
+.member-bottom h4{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #e73c3e;
+}
+.member-bottom p{
     color: #606060;
 }
 
